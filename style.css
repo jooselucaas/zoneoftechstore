@@ -1,0 +1,845 @@
+/* Reseta margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+  }
+
+  /* Footer */
+  .site-footer {
+    background-color: #045174; /* Cor similar à do cabeçalho */
+    color: white;
+    padding: 1px 0; /* Diminui o padding para tornar o footer mais fininho */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0; /* Remove o espaço entre o footer e o cabeçalho */
+  }
+  
+  .site-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icon {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    font-size: 13px; /* Diminuído o tamanho do nome */
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icon i {
+    font-size: 13px; /* Diminuído o tamanho do ícone */
+    margin-right: 5px;
+  }
+  
+  .social-icon:hover {
+    color: #001F3D; /* Cor ao passar o mouse */
+  }
+  
+  .frete p {
+    font-size: 13px;
+    margin: 0;
+    color: white;
+  }
+  
+  
+  /* Cabeçalho */
+  .site-header {
+    background-color: #001f3d;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Adicionado espaçamento lateral */
+  }
+  
+  /* Logo */
+  .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #045174;
+    margin-left: 10px; /* Espaçamento da logo */
+  }
+  
+  /* Barra de pesquisa */
+  .search-bar {
+    display: flex;
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+  }
+
+  /* Quando o campo de pesquisa é clicado (focado), não exibe borda */
+  .search-bar input:focus {
+    outline: none; /* Remove a borda de foco do navegador */
+    border: none; /* Certifique-se de que não há borda */
+  }
+  
+  
+  .search-bar button {
+    background-color: #045174;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #045174d0;
+  }
+  
+  /* Ícones e links */
+  .icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Espaçamento dos ícones */
+  }
+  
+  .icons .link {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  
+  .icon i {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  /* Menu Mobile */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 15px;
+    position: absolute;
+    top: 125px; /* Ajusta a distância abaixo do cabeçalho */
+    right: 10px;
+    background-color: #001F3D;
+    padding: 15px 20px; /* Adiciona mais espaçamento interno */
+    border-radius: 1px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destacar o menu */
+  }
+  
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* Aumenta o tamanho do texto para melhor legibilidade */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Exibição do menu quando ativado */
+  .mobile-menu.show {
+    display: flex;
+  }
+  
+  /* Exibição do menu quando ativado */
+  .mobile-menu.show {
+    display: flex;
+  }
+
+  /* Efeito de Hover para links no menu */
+  .mobile-menu a:hover {
+    color: #045174; /* Cor que você quer para o texto */
+    transition: color 0.3s ease; /* Transição suave de cor */
+  }
+  
+  /* Efeito de Hover para os ícones dentro do menu */
+  .mobile-menu .icon i:hover {
+    color: #045174; /* Cor ao passar o mouse */
+    transition: color 0.3s ease; /* Transição suave de cor */
+  }
+  
+  /* Efeito de Hover para os links na barra de navegação */
+  .icons .link:hover {
+    text-decoration: none;
+    color: #045174; /* Cor ao passar o mouse */
+    transition: color 0.3s ease; /* Transição suave de cor */
+  }
+  
+  /* Efeito de Hover para os ícones na barra de navegação */
+  .icons .icon i:hover {
+    color: #045174; /* Cor ao passar o mouse */
+    transition: color 0.3s ease; /* Transição suave de cor */
+  }
+
+  /* Estilos gerais da seção */
+  .hero-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: 300px; /* Menor altura para deixar as imagens mais finas */
+    flex-wrap: wrap; /* Permite que as imagens se reorganizem quando a tela diminuir */
+    margin-top: 0;
+    background-color: #FFFFFF; /* Fundo branco para a seção */
+  }
+  
+  /* Container do slider */
+  .slider-container {
+    flex: 2;
+    overflow: hidden;
+    position: relative;
+    height: 100%; /* Garante que o slider preencha toda a altura da seção */
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Centraliza o slider */
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  
+  /* Slider com imagens */
+  .slider {
+    display: flex;
+    width: 100%;
+    height: 100%; /* Ajusta a altura para 100% do container */
+    animation: slide 20s infinite;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%; /* Preenche toda a altura disponível */
+    object-fit: cover; /* Cobre sem distorção */
+    flex-shrink: 0;
+    background-size: 100% 100%;
+  }
+  
+  
+  /* Animação do slider */
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Imagens laterais */
+  .side-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Diminui o espaço entre as imagens laterais */
+    height: 100%;
+  }
+  
+  .side-images img {
+    width: 100%;
+    height: 50%; /* As imagens laterais ocupam metade da altura da seção */
+    object-fit: cover; /* Ajusta para cobrir sem distorção */
+  }
+
+  /* Ajustando o tamanho das imagens para ficarem mais finas */
+ .slider-container {
+    flex: 2;
+    max-height: 218px; /* Define uma altura menor para o slider */
+  }
+  
+  .side-images img {
+    height: 40%; /* Torna as imagens laterais mais finas */
+  }
+
+  /* Estilo da seção de ícones */
+  .icon-section {
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+  /* Container dos ícones */
+  .icon-container {
+    padding: 20px 10px;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Garante responsividade */
+    gap: 20px; /* Espaço entre os ícones */
+    max-width: 1200px; /* Limita a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container */
+  }
+  
+  /* Estilo de cada item */
+  .icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Estilo dos ícones */
+  .icon-item i {
+    font-size: 30px;
+    color: #001F3D; /* Cor laranja semelhante ao da Shopee */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Efeito de hover */
+  }
+  
+  /* Estilo do texto */
+  .icon-item p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  /* Efeito ao passar o mouse no ícone */
+  .icon-item:hover i {
+    transform: scale(1.2); /* Amplia levemente o ícone */
+    color: #045174; /* Cor mais escura ao passar o mouse */
+  }
+  
+  /* Estilo da seção de categorias */
+  .categories-section {
+    margin-bottom: -20px;
+    background-color: #F5F5F5;
+    padding: 20px 10px;
+    text-align: center;
+   }
+
+   .categories-title-container {
+    max-width: 1200px; /* Limite de largura */
+    margin: 0 auto; /* Centraliza o contêiner */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  
+  .categories-title {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    margin: 0; /* Remove a margem automática */
+    font-size: 28px; /* Aumenta um pouco o tamanho */
+    color: #045174; /* Altera a cor para combinar com a identidade Shopee */
+    font-weight: bold;
+    position: relative; /* Necessário para adicionar o efeito de borda */
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+  }
+
+  .categories-title::after {
+    content: '';
+    width: 100%; /* Tamanho da linha */
+    height: 2px; /* Espessura da linha */
+    background-color: #001F3D; /* Cor da linha */
+    display: block;
+    margin: 10px auto 0; /* Centraliza abaixo do título */
+    border-radius: 2px; /* Deixa a linha com bordas arredondadas */
+  }
+  
+  /* Estilo do container de categorias */
+  .categories-container {
+    background-color: #FFFFFF;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Estilo de cada item de categoria */
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Estilo das imagens */
+  .category-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 50%; /* Deixa as imagens redondas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
+  }
+  
+  /* Nome da categoria */
+  .category-item p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  /* Efeito ao passar o mouse */
+  .category-item:hover img {
+    transform: scale(1.1); /* Aumenta levemente a imagem */
+    transition: transform 0.3s ease;
+  }
+  
+  .category-item:hover p {
+    color: #045174; /* Cor semelhante ao laranja da Shopee */
+  }
+  
+
+  /* Estilo geral da seção */
+.section-destaques {
+    margin-bottom: -20px;
+    padding: 20px 10px;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+.destaques-title-container {
+    max-width: 1200px; /* Limite de largura */
+    margin: 0 auto; /* Centraliza o contêiner */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.section-destaques h2 {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    font-size: 28px; /* Aumenta um pouco o tamanho */
+    color: #045174; /* Altera a cor para combinar com a identidade Shopee */
+    font-weight: bold;
+    position: relative; /* Necessário para adicionar o efeito de borda */
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+}
+
+.section-destaques h2::after {
+    content: '';
+    width: 100%; /* Tamanho da linha */
+    height: 2px; /* Espessura da linha */
+    background-color: #001F3D; /* Cor da linha */
+    display: block;
+    margin: 10px auto 0; /* Centraliza abaixo do título */
+    border-radius: 2px; /* Deixa a linha com bordas arredondadas */
+  }
+
+/* Container do carrossel */
+.carousel-container {
+    background-color: #FFFFFF;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px 10px;
+    max-width: 1200px; /* Limita a largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.carousel {
+    justify-content: center; /* Centraliza os itens do carrossel */
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100%); /* Ajuste para ocupar 100% do contêiner */
+}
+
+.carousel-item {
+    min-width: 150px; /* Tamanho fixo para cada item */
+    flex-shrink: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+}
+
+.carousel-item img {
+    width: 100px; /* Tamanho fixo para as imagens */
+    height: 100px; /* Altura fixa para evitar desproporção */
+    object-fit: cover; /* Garante que as imagens sejam centralizadas */
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/* Botões do carrossel */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    font-size: 1.5rem; /* Aumente o tamanho da fonte */
+    color: #001F3D;
+    cursor: pointer;
+    width: 30px; /* Aumente a largura para acomodar o texto */
+    height: 30px; /* Aumente a altura para acomodar o texto */
+    border-radius: 50%; /* Mantém o botão redondo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+ }
+
+.carousel-btn:hover {
+    background-color: #001F3D;
+    color: #fff;
+}
+
+.left-btn {
+    left: 0.5rem;
+}
+
+.right-btn {
+    right: 0.5rem;
+}
+
+.section-descoberta {
+    margin-bottom: -20px;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+.descoberta-container {
+    background-color: #FFFFFF;
+    padding: 20px 10px;
+    max-width: 1200px; /* Limita a largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.descoberta-title-container {
+    max-width: 1200px; /* Limite de largura */
+    margin: 0 auto; /* Centraliza o contêiner */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.section-descoberta h2 {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    font-size: 28px; /* Aumenta um pouco o tamanho */
+    color: #045174; /* Altera a cor para combinar com a identidade Shopee */
+    font-weight: bold;
+    position: relative; /* Necessário para adicionar o efeito de borda */
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+}
+
+.section-descoberta h2::after {
+    content: '';
+    width: 100%; /* Tamanho da linha */
+    height: 3px; /* Espessura da linha */
+    background-color: #001F3D; /* Cor da linha */
+    display: block;
+    margin: 10px auto 0; /* Centraliza abaixo do título */
+    border-radius: 2px; /* Deixa a linha com bordas arredondadas */
+  }
+
+.product-row {
+    display: flex;
+    justify-content: space-between; /* Espaça os produtos igualmente */
+    margin-bottom: 2rem; /* Espaçamento entre as fileiras */
+}
+
+.product-item {
+    flex: 1; /* Cada item ocupa o mesmo espaço */
+    margin: 0 10px; /* Margem lateral entre os itens */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%; /* Imagem ocupa 100% do contêiner */
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #e74c3c; /* Cor do preço */
+}
+
+.btn-ver-mais {
+    background-color: #045174; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.btn-ver-mais:hover {
+    background-color: #001F3D; /* Cor de fundo ao passar o mouse */
+}
+  /* Estilos responsivos */
+  @media (max-width: 1188px) {
+
+    .container {
+      padding: 0 15px; /* Reduz o espaçamento lateral */
+    }
+  
+    .search-bar {
+      margin: 0 10px; /* Reduz o espaçamento entre logo e barra de pesquisa */
+    }
+  
+    .search-bar input {
+      width: 100%; /* Diminui a largura proporcionalmente */
+    }
+  
+    .icons {
+      margin-right: 5px; /* Ajusta o espaçamento dos ícones */
+    }
+  
+    .logo img {
+      margin-left: 5px; /* Ajusta a posição da logo */
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+    .frete p {
+        padding: 2px;
+        font-size: 12px;
+    }
+
+    .social-links a {
+        font-size: 12px;
+    }
+
+    .search-bar {
+      display: none; /* Esconde a barra de pesquisa em telas muito pequenas */
+    }
+  
+    .desktop-menu {
+      display: none;
+    }
+  
+    .mobile-menu-btn {
+      display: block;
+    }
+  
+    .mobile-menu.show {
+      display: flex;
+    }
+  }
+
+  /* Responsividade para telas menores */
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding-top: 0; /* Adiciona apenas um pequeno padding superior */
+        margin-top: 0; /* Remove qualquer margem extra */
+      }
+
+    /* Para o slider */
+    .slider-container {
+      flex: 100%;
+      height: 200px;
+      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: -20px;
+    }
+  
+    .slider {
+      width: 100%;
+      height: 70%; /* Ajusta o tamanho do slider para que não ocupe a tela toda */
+    }
+  
+    /* Para as imagens laterais */
+    .side-images {
+        padding-top: 0;
+      flex: 100%;
+      flex-direction: row; /* Coloca as imagens lado a lado */
+      justify-content: space-between; /* Espaça as imagens na horizontal */
+      height: 50%; /* Ajusta a altura para ser metade da altura total da seção */
+    }
+  
+    .side-images img {
+      width: 48%; /* As imagens laterais vão ocupar a largura de 48% cada uma */
+      height: 100px; /* Ajusta a altura das imagens laterais */
+    }
+  }
+
+
+  /* Media Query para dispositivos menores */
+@media (max-width: 768px) {
+    .icon-container {
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Ajusta o tamanho mínimo para ícones */
+      gap: 15px; /* Reduz o espaçamento entre ícones */
+    }
+  
+    .icon-item i {
+      font-size: 24px; /* Diminui o tamanho do ícone */
+    }
+  
+    .icon-item p {
+      font-size: 12px; /* Reduz o tamanho do texto */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .icon-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* Exatamente 5 ícones por linha */
+      gap: 10px; /* Reduz o espaço entre os ícones */
+    }
+  
+    .icon-item i {
+      font-size: 20px; /* Diminui mais o tamanho do ícone */
+    }
+  
+    .icon-item p {
+      font-size: 10px; /* Reduz o texto para caber em telas pequenas */
+    }
+  }
+  
+  
+
+
+  /* Para telas menores (tablets e celulares grandes) */
+@media (max-width: 768px) {
+
+    .categories-title {
+      font-size: 20px;
+    } 
+    .categories-container {
+      gap: 15px; /* Reduz o espaço entre os itens */
+    }
+  
+    .category-item img {
+      width: 50px;
+      height: 50px; /* Reduz o tamanho das imagens */
+    }
+  
+    .category-item p {
+      font-size: 12px; /* Reduz o tamanho do texto */
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+    .categories-title {
+      font-size: 18px;
+    }
+    .categories-container {
+      grid-template-columns: repeat(5, 1fr); /* Mantém 5 categorias por linha */
+      gap: 10px; /* Reduz o espaço entre os itens */
+    }
+  
+    .category-item img {
+      width: 40px; /* Diminui o tamanho das imagens */
+      height: 40px;
+    }
+  
+    .category-item p {
+      font-size: 12px; /* Diminui o tamanho do texto */
+    }
+  }
+
+
+ /* Media Queries para Responsividade */
+@media (max-width: 768px) {
+
+  .section-destaques h2{
+    font-size: 20px;
+  }
+    .carousel-item {
+        min-width: 30%; /* Ajusta o tamanho mínimo dos itens para 3 itens visíveis */
+    }
+
+    .carousel-item img {
+        width: 80px; /* Ajusta o tamanho das imagens */
+        height: 80px; /* Ajusta a altura das imagens */
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section-destaques h2{
+        font-size: 18px;
+    }
+
+    .carousel-item {
+        min-width: 45%; /* Ajusta o tamanho mínimo dos itens para 2 itens visíveis */
+    }
+
+    .carousel-item img {
+        width: 60px; /* Ajusta o tamanho das imagens */
+        height: 60px; /* Ajusta a altura das imagens */
+    }
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+
+    .section-descoberta h2 {
+       font-size: 20px;
+    }
+
+    .product-row {
+        flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
+    }
+
+    .product-item {
+        flex: 0 0 30%; /* Cada item ocupa aproximadamente 30% da largura (3 itens por linha) */
+        margin: 1%; /* Margem para espaçamento */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        flex: 0 0 45%; /* Cada item ocupa aproximadamente 45% da largura (2 itens por linha) */
+        margin: 0; /* Remove a margem lateral */
+        margin-bottom: 1rem; /* Adiciona margem inferior para espaçamento */
+    }
+
+    .section-descoberta h2 {
+        font-size: 18px; /* Ajusta o tamanho do título */
+    }
+}
+  
+  
+  
